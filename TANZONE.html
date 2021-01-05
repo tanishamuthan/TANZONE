@@ -1,0 +1,222 @@
+<html>
+    <head>
+<style>
+    body{  background-color: turquoise;}
+    h1{ text-align: center;
+    margin: 20px;}
+    li{margin: 20px;}
+    #two{color:black;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;}
+
+    img{align-content: center;}
+    #ourmerch{text-align: center;}
+    
+    #Thanks{text-align: center;}
+    #giveaway{ text-align: center;}
+    span{ color: black;}
+    ul{
+        list-style : none;
+        margin: 0px;
+        padding: 0px;
+    }
+    li{
+        float: left;
+    }
+    a { display: block;
+         margin: 0px 20px;
+    padding: 0px 20px;
+    text-decoration: none;
+    line-height: 50px;
+    font-size:25px;
+    border-right:black 2px solid;
+    }
+
+    a:hover {
+        background-color: cornsilk;
+        font-size:26px;
+    }
+    
+    #navbar{width : 100%;
+    height : 100px;
+    background-color: wheat;}
+
+    h1{ float: left;
+    color: black;
+    margin-bottom: 10px;
+    margin-right:35px ;
+    line-height: 0.6;}
+
+    h1:hover{ text-shadow: 7px 7px 5px crimson;}
+
+    *{
+            margin : 0px ; 
+            padding : 0px ;
+        }
+        .sidebar{
+            position : fixed ;
+            width : 250px ;
+            height : 100%;
+            background-color: black;
+            text-align: center;
+            color : white ; 
+            left: -300px ; 
+        }
+        .sidebar  ul a{
+            text-decoration: none;
+            line-height : 50px ; 
+            color : white ; 
+            font-size: 20px;
+            
+            
+        }
+        .sidebar ul a li{
+            border-bottom : rgb(53, 52, 52)  3px solid ; 
+            border-top : rgb(31, 28, 28) 2px solid ; 
+        }
+        .sidebar ul {
+            margin-top : 80px  ; 
+        }
+        .sidebar #close{
+           margin-left : 220px ; 
+            width : 20px;
+            height : 20px ;
+            font-size : 30px ; }
+
+            #loader{
+            width : 100px;
+            height : 100px;
+            border-radius : 50%;
+            border-top : red 5px solid;
+            animation-name : sample;
+            animation-duration: 2s;
+            animation-timing-function : linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes sample 
+        {
+                from{ transform : rotate(0deg);   }
+                to{  transform : rotate(360deg);  } 
+
+    </style>
+    
+    
+    <body>
+       <h1>TANZONE</h1>
+        <ul><div id="navbar">
+           <li><a href="">home</a></li>
+           <li><a href="Video.html">Video links</a></li>
+           <li><a href="giveaway.html">Giveaways</a></li>
+           <li><a href="merch.html">TANZONE.SHOP</a></li>
+
+
+           
+       </ul> </div>
+
+      
+ 
+       <script>
+        function clock(){
+            var time = new Date() ;    // time is an object of Date type which will give us all the required values
+
+            var hour = time.getHours() ;             // to extract the current hour  
+            var min =  time.getMinutes() ;           // to extract the current minutes 
+            var sec = time.getSeconds() ;            // to extract the current seconds          
+
+            var day = time.getDate();               //to extract the current day
+            var month = time.getMonth() + 1;             // to extract the current month( 0-11 )
+            var year = time.getFullYear();              //to extract the current year 
+           
+
+
+            var x = hour + ":" + min + ":" + sec ;           
+            var y = day + "/" + month + "/" + year ; 
+
+            document.getElementById("time").innerHTML = x ; 
+            document.getElementById("date").innerHTML = y ;
+            }
+            //setInterval is used to call another function repeatedly after equal interval of time 
+            setInterval(clock, 1000) ; 
+
+        function show()
+        {
+            document.getElementById("sidebar").style.left = "0px" ; 
+        }
+        function hide()
+        {
+            document.getElementById("sidebar").style.left = "-300px" ; 
+        }
+
+        function show(){
+            document.getElementById("loader").style.display = "none" ; 
+            document.getElementById("content").style.display = "block" ; 
+        }
+
+        setTimeout(show,3000);
+    </script>
+       
+       </div>
+       </body>
+
+
+       
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <br><img src="https://yt3.ggpht.com/a-/AOh14GiSKbjpwdPu1bgaTsdWQot_noEK9V4F7A2PpZn0=s88-c-k-c0xffffffff-no-rj-mo" width="600" height="700">
+        <br> 
+        <br>
+        <br>
+        <br> click here to view our YouTube  channel<br><br><br><a href="https://www.youtube.com/channel/UCiOMLCXX_YO8fPKxUehi7HA?view_as=subscriber">TANZONE</a>
+        <br>
+        <br>
+        
+        <ol>
+        
+        <br>
+        <br>
+        <H1 id="two">Link to our videos:</H1>
+    </ol>
+            
+    <br>
+    <br>
+    
+    <br>
+    <br> 
+    <form action="TANZONE_THANKS.html">
+       ENTER YOUR Email address and your feedback like REMARKS OR SUGESTIONS ABOUT THIS CHANNEL-> 
+       <br>
+       <br>
+       <br>
+       <br><input type="text" placeholder="Name">
+       <br> <input type="email" name="email" placeholder="enter your email" value="email">
+       <br> <input type="password" placeholder="enter your password" value="password">
+       <br> <br> Male<input type="radio" name="gender" value="M">
+       <br> Female<input type="radio" name="gender" value="F">
+       <br>
+       <br><br><input type="text" placeholder="Your suggestions">
+       <br><input type="submit" value="Submit">
+       
+    </form>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+        
+                         <span id="Thanks"><b>THANKS FOR VISITING!</b></span>
+                         <br>.
+                         <br>.
+                         <br>.
+                         <br>.
+                         <br>.
+                         <br>.
+        <marquee behaviour="scroll" direction="right">Pls like, Share and subscribe to our channel!</marquee>
+
+        
+    </body>
+</html>
